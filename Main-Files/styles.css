@@ -1,0 +1,60 @@
+:root {
+    --border-color: blue;
+    --sidebar-color: yellow;
+}
+
+body {
+    display:flex;
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: yellow;
+    min-width: 17%;
+}
+
+.right {
+    min-width: 83%;
+    gap:80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header.top {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+input.searchBar {
+    height: 20%;
+    position: relative;
+    top: 20px;
+}
+
+.header.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    box-sizing: border-box;
+    display: grid;
+    gap:10px;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    grid-auto-flow: column;
+    grid-auto-rows:1fr;
+}
+
+.box {
+    border: solid;
+    border-color:var(--border-color);
+}
+
+.profile {
+    margin:0;
+    padding: 0;
+}
