@@ -4,6 +4,8 @@
             --sidebar-width: 280px;
             --header-height: 80px;
             --gap-size: 30px;
+            --body-color: rgb(230, 230, 50);
+            --dashboard-color: powderblue;
         }
 
         
@@ -22,12 +24,13 @@
                 "sidebar main";
             grid-template-columns: var(--sidebar-width) 1fr;
             grid-template-rows: var(--header-height) 1fr;
+            background-color: var(--body-color);
         }
 
         
         .sidebar {
             grid-area: sidebar;
-            background-color: var(--sidebar-bg);
+            background-color: var(--dashboard-color);
             border-right: 1px solid #e5e7eb;
             padding: var(--gap-size);
             display: flex;
@@ -115,6 +118,16 @@
             display:flex;
             flex-direction: column;
             margin:var(--gap-size);
+        }
+
+        button {
+            padding: 10px 25px 10px 25px;
+            margin: 0 10px 0 10px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            color: black;
+            font-size: 900;
+            font-size: 20px;
         }
 
         
